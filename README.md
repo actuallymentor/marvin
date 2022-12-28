@@ -2,12 +2,13 @@
 
 This app is an example search engine implementation of OpenAI's GPT API using `react.js` with Firebase as a backend.
 
+- [Try the live demo here]( https://marvin-development-7a4f7.web.app/ )
+- Do you have questions, comments, or feature requests? [Open an issue here](https://github.com/actuallymentor/battery/issues) or [Tweet at me](https://twitter.com/actuallymentor).
+
 <img src='./assets/screenshot-homepage.png' />
 
 <img src='./assets/screenshot-search.png' />
 
-- [Try the live demo here]( https://marvin-development-7a4f7.web.app/ )
-- Do you have questions, comments, or feature requests? [Open an issue here](https://github.com/actuallymentor/battery/issues) or [Tweet at me](https://twitter.com/actuallymentor).
 
 ## Requirements
 
