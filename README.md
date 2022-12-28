@@ -1,6 +1,6 @@
 # Marvin: OpenAI API Usage example in a react app
 
-This app is an example search engine implementation of OpenAI's API using `react.js` with Firebase as a backend.
+This app is an example search engine implementation of OpenAI's GPT API using `react.js` with Firebase as a backend.
 
 <img src='./assets/screenshot-homepage.png' />
 
@@ -20,7 +20,7 @@ This app is an example search engine implementation of OpenAI's API using `react
 Step 1: clone this repository:
 
 ```shell
-git clone 
+git clone https://github.com/actuallymentor/marvin.git
 ```
 
 Step 2: install all dependencies
