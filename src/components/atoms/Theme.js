@@ -6,9 +6,16 @@ const theme = {
 	colors: {
 		primary: 'black',
 		text: 'black',
+		text_surface: 'white',
 		accent: 'orange',
 		hint: 'grey',
-		backdrop: 'rgba( 0, 0, 0, .05 )'
+		backdrop: 'rgba( 0, 0, 0, .2 )'
+	},
+	shadows: {
+		surface: '0 0 15px 0px rgba( 0, 0, 0, .05 )'
+	},
+	shapes: {
+		corner_radius: '5px'
 	}
 }
 
@@ -16,9 +23,16 @@ const theme_dark = {
 	colors: {
 		primary: 'white',
 		text: 'white',
+		text_surface: 'black',
 		accent: 'orange',
 		hint: 'lightgrey',
 		backdrop: 'rgba( 0, 0, 0, .9 )'
+	},
+	shadows: {
+		surface: '0 0 15px 0px rgba( 255, 255, 255, .1 )'
+	},
+	shapes: {
+		corner_radius: '5px'
 	}
 }
 
@@ -42,10 +56,11 @@ export default props => {
 		// Enable a listener
 		window.matchMedia('(prefers-color-scheme: dark)').addEventListener( 'change', event => {
 			log( 'Darkmode setting changed to ', event.matches )
-			setDark( event.matches == 'dark' )
+			setDark( event.matches )
 		})
 
 	}, [] )
 
+	log( dark ? theme_dark : theme )
 	return <ThemeProvider { ...props } theme={ dark ? theme_dark : theme } />
 }

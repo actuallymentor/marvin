@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "",
-    "development": "",
+    "default": "marvin-development-7a4f7",
+    "development": "marvin-development-7a4f7",
     "production": ""
   }
 }

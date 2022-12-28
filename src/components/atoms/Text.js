@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Text = styled.p`
 	font-size: 1rem;
-	margin: 1rem 0;
+	margin: ${ ( { margin='1rem 0' } ) => margin};
 	line-height: 1.5rem;
 	color: ${ ( { theme, color } ) => color || theme.colors.text };
 	text-align: ${ ( { align } ) => align || 'left' };

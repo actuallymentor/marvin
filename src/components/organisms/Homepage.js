@@ -1,18 +1,13 @@
 import Container from "../atoms/Container"
-import Main from "../atoms/Main"
-import Section from "../atoms/Section"
-import Hero from "../molecules/Hero"
-import { H1, H2, Text } from "../atoms/Text"
+import { Text } from "../atoms/Text"
+import SearchBar from "../molecules/SearchBar"
 
 export default function Homepage() {
 
-
     return <Container>
 
-        <Hero>
-            <H1>This is a boilerplate</H1>
-            <H2>It doesn't do much</H2>
-        </Hero>
+        <Text>Marvin is an AI powered search engine. Ask him anything.</Text>
+        <SearchBar />
 
     </Container>
 }

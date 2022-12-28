@@ -7,14 +7,23 @@ const Input = styled.span`
 	flex-direction: column;
 	margin: ${ ( { margin } ) => margin || '1rem 0' };
 	width: ${ ( { width } ) => width || '100%' };
-	
-	& select, input, & p {
-		background: ${ ( { theme } ) => theme.colors.backdrop };
-		border: none;
-		border-left: 2px solid ${ ( { theme, highlight } ) => highlight ? theme.colors.accent : theme.colors.primary };
+
+	input::placeholder {
+		font-style: italic;
 	}
 
+	select, input {
+		box-shadow: ${ ( { theme } ) => theme?.shadows?.surface };
+    	border-radius: ${ ( { theme } ) => theme.shapes.corner_radius };
+		&:focus {
+			outline: none;
+		}
+	}
+	
 	& select, input, & p {
+		background: ${ ( { theme } ) => theme.colors.text_surface };
+		border: none;
+		color: ${ ( { theme } ) => theme.colors.text };
 		padding: 1rem 2rem 1rem 1rem;
 		width: 100%;
 	}

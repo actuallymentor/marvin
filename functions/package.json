@@ -6,8 +6,7 @@
     "shell": "NODE_ENV=development firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log",
-    "runtime": "firebase functions:config:get > .runtimeconfig.json"
+    "logs": "firebase functions:log"
   },
   "engines": {
     "node": "16"
@@ -15,9 +14,9 @@
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^11.4.1",
-    "firebase-functions": "^4.1.1"
-  },
-  "devDependencies": {
+    "firebase-functions": "^4.1.1",
+    "openai": "^3.1.0",
+    "sha.js": "^2.4.11"
   },
   "private": true
 }

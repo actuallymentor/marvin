@@ -9,7 +9,7 @@ export default styled.div`
 	justify-content: center;
 	min-height: 100vh;
 	width: 100%;
-	padding:  0 max( 1rem, calc( 25vw - 8rem ) );
+	padding: 5rem max( 1rem, calc( 25vw - 8rem ) );
 	box-sizing: border-box;
 	background-color: ${ ( { theme } ) => theme.colors.backdrop };
 	& * {
